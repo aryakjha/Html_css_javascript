@@ -1,0 +1,13 @@
+function swapRedGreen(pixle)
+{ 
+    var a = pixle.getRed();
+    pixle.setRed(pixle.getGreen());
+    pixle.setGreen(a);
+}
+img = new SimpleImage("usain.jpg");
+print(img);
+for(var pix of img.values())
+{
+pix = swapRedGreen(pix);
+}
+print(img);

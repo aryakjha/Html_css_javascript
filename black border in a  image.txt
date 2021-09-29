@@ -1,0 +1,33 @@
+// write your code here
+
+function setBlack(pixle)
+{ 
+    var x = pixle.getRed();
+    var y = pixle.getGreen();
+    var z = pixle.getBlue();
+    pixle.setRed(0);
+    pixle.setGreen(0);
+    pixle.setBlue(0);
+    
+    return x;
+    return y;
+    return z;
+}
+function Border(pixle,img)
+{   if((pixle.getX()<=10))
+    {setBlack(pixle);}
+    else if(pixle.getY()<=10)
+    {setBlack(pixle); }
+    else if (pixle.getX() >= (img.getWidth() - 10))
+    {setBlack(pixle);}
+    else if(pixle.getY() >= (img.getHeight() - 10))
+    {setBlack(pixle);}
+}
+
+var img = new SimpleImage("smallpanda.png");
+for( var pix of img.values())
+{ Border(pix,img);}
+print(img);
+
+    
+

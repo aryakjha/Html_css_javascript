@@ -1,0 +1,22 @@
+// write your code here
+
+function setBlack(pixle)
+{ 
+    var x = pixle.getRed();
+    var y = pixle.getGreen();
+    var z = pixle.getBlue();
+    pixle.setRed(0);
+    pixle.setGreen(0);
+    pixle.setBlue(0);
+    
+    return x;
+    return y;
+    return z;
+}
+var img = new SimpleImage("smallpanda.png");
+ for( var pix of img.values())
+ { var a = setBlack(pix);}
+print(img);
+
+    
+

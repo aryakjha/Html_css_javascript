@@ -1,0 +1,12 @@
+// write your code here
+var img = new SimpleImage("smallpanda.png");
+for ( var pixle of img.values())
+{ if(pixle.getX()<= img.getWidth()/3)
+    {pixle.setRed(255);
+    }
+    else if((pixle.getX()>= img.getWidth()/3) && (pixle.getX()<=img.getWidth()*2/3))
+    {pixle.setGreen(255);}
+    else
+    {pixle.setBlue(255);}
+}
+print(img);

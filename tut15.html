@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url('https://images.ctfassets.net/hrltx12pl8hq/3MbF54EhWUhsXunc5Keueb/60774fbbff86e6bf6776f1e17a8016b4/04-nature_721703848.jpg?fit=fill&w=480&h=270');
+        }
+        .container{
+            background-color: darkgoldenrod;
+            border: 3px solid rgb(17, 0, 255);
+            /* We can set padding/margin for top left , right, top, bottom */
+            /* padding:  79px; */
+            margin: 34px;
+            /* padding : 23px 56px 6px 78px ; padding = top right bottom left */
+            padding: 56px 19px; /* padding : y(top/bottom) x(left/right); */
+            border-radius: 23px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id = "first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis possimus harum explicabo aliquid voluptates. Aut, fugiat maxime mollitia aspernatur suscipit delectus distinctio eius! </p>
+    </div>
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id = "second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis possimus harum explicabo aliquid voluptates. Aut, fugiat maxime mollitia aspernatur suscipit delectus distinctio eius! </p>
+    </div>
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id = "third">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis possimus harum explicabo aliquid voluptates. Aut, fugiat maxime mollitia aspernatur suscipit delectus distinctio eius! </p>
+    </div>
+    
+</body>
+</html>
